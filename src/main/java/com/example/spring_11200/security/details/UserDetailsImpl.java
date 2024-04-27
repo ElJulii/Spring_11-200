@@ -45,6 +45,6 @@ public class UserDetailsImpl implements UserDetails {
 
     @Override
     public boolean isEnabled() {
-        return user.getConfirmed().equals("CONFIRMED");
+        return user.getState().equals("CONFIRMED");
     }
 }
